@@ -17,13 +17,13 @@ nav{
 .TVintro,.email{
     flex-wrap: nowrap;
 }
-.enjoy,.intro,.img,.cardintro{
+.enjoy,.intro,.img,.cardintro,.main4{
     flex-direction: column;
 }
-nav,.main,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card img,.enimation{
+nav,.main,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card img,.enimation,.stream{
     border: 0px solid green;
 }
-.tv,.enjoy,.cardintro,.img,.enimation{
+.tv,.enjoy,.cardintro,.img,.enimation,.main4{
     justify-content: center;
 }
 nav,.TVintro,.main3{
@@ -32,7 +32,7 @@ nav,.TVintro,.main3{
 nav,.tv,.intro,.enimation{
     align-items: center;
 }
-nav,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card,.enimation,.main3{
+nav,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card,.enimation,.main3,.main4{
     display: flex;
 }
 .logo{
@@ -179,9 +179,48 @@ hr{
     margin-top:2rem ;
     font-size: 1.9rem;
 }
-/* use media qury */
+/* watch everywaer */
+.main4{
+    background-color: black;
+    width: 100%;
+    height: 250px;
+}
+.stream{
+    margin-left: 5rem;
+    width: 45%;
+}
+.p5,.p6{
+    color: white;
+}
+.p5{
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.p6{
+    font-size:1.8rem ;
+    font-weight: normal;
+    line-height: 35px;
+}
+      /* use media qury */
           /* 1000PX */
 @media screen and (max-width:1000px) {
+    .main4{
+        align-items: center;
+    }
+    .stream{
+        margin: 0;
+        width: 90%;
+        text-align: center;
+    }
+    .p5{
+        font-size: 2.5rem; 
+    }
+    .p6{
+        font-size:1.5rem ;
+        font-weight: normal;
+        line-height: 35px;
+    }   
     .email{
         width: 500px;
         flex-direction: column;
@@ -308,11 +347,15 @@ hr{
 }
 
 @media screen and (max-width:510px) {
-    .p3{
+    .p3,.p5{
         font-size: 2rem;
     }
     .p4{
         font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .p6{
+        font-size: 1.2rem ;
     }
     .enimation{
         width: 300px;
