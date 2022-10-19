@@ -17,23 +17,26 @@ nav{
 .TVintro,.email{
     flex-wrap: nowrap;
 }
-.enjoy,.intro,.img,.cardintro,.main4{
+.enjoy,.intro,.img,.cardintro,.main4,.kidintro{
     flex-direction: column;
 }
-nav,.main,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card img,.enimation,.stream{
+nav,.main,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card img,.enimation,.stream,.kids,.kidintro{
     border: 0px solid green;
 }
-.tv,.enjoy,.cardintro,.img,.enimation,.main4{
+.tv,.enjoy,.cardintro,.img,.enimation,.main4,.main5,.kids,.kidintro{
     justify-content: center;
 }
 nav,.TVintro,.main3{
     justify-content: space-between;
 }
-nav,.tv,.intro,.enimation{
+nav,.tv,.intro,.enimation,.kids{
     align-items: center;
 }
-nav,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card,.enimation,.main3,.main4{
+nav,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card,.enimation,.main3,.main4,.main5,.kids,.kidintro{
     display: flex;
+}
+button,.h1,.h3,h4,.enjoy h1,.enjoy h3,.p1,.p3,.p4,.p5,.p6,.p7,.p8{
+    color: white;
 }
 .logo{
     width: 150px;
@@ -42,7 +45,6 @@ button{
     padding: 10px;   
     background-color: red;
     border-radius: 5px;
-    color: white;
     font-size: 20px;
 }
 .h1{
@@ -59,7 +61,6 @@ h4{
     line-height: 4em;
 }
 .h1,.h3,h4{
-    color: white;
     text-align: center;
 }
 .intro{
@@ -83,7 +84,6 @@ hr{
     background-color: rgb(33, 33, 33);
     border: none;
 }
-
 /* TV */
 .main2{
     height: 50%;
@@ -98,12 +98,10 @@ hr{
 .enjoy h1{
    line-height: 8rem;
     font-size: 2.8rem;
-    color: white;
     text-align: left;
 }
 .enjoy h3{
     font-size: 1.5rem;
-    color: white;
     text-align: left;
     max-width: 33rem;
     font-weight: normal;
@@ -156,7 +154,6 @@ hr{
     margin-left: 1.1em;
 }
 .p1{
-    color: white;
     font-weight: bold;
     line-height: 25px;
 }
@@ -167,13 +164,11 @@ hr{
     width: 50%;
 }
 .p3{
-    color: white;
     font-size: 3rem;
     font-weight: bold;
 }
 .p3,.p4{
     max-width: 90%;
-    color: white;
 }
 .p4{
     margin-top:2rem ;
@@ -189,9 +184,6 @@ hr{
     margin-left: 5rem;
     width: 45%;
 }
-.p5,.p6{
-    color: white;
-}
 .p5{
     font-size: 3rem;
     margin-bottom: 20px;
@@ -202,10 +194,58 @@ hr{
     font-weight: normal;
     line-height: 35px;
 }
+/* Kids Introduction */
+.main5{
+    background-color: black;
+    width: 100%;
+    height: 400px;
+}
+.kids{
+    width: 50%;
+}
+.kids img{
+    width: 29rem;
+}
+.kidintro{
+    width: 50%;    
+}
+.p7{ 
+    max-width: 90%;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.p8{
+    max-width: 78%;
+    font-size:1.5rem ;
+    font-weight: normal;
+}
       /* use media qury */
           /* 1000PX */
 @media screen and (max-width:1000px) {
-    .main4{
+    .main5{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 500px;
+    }   
+    .kids{
+        width: 100%;
+    }
+    .kidintro{
+        width: 90%; 
+        flex-direction: column;
+        text-align: center;
+        align-items: center; 
+    }
+    .p7{ 
+        max-width: 100%;
+        font-weight: bold;
+    }
+    .p8{
+        max-width: 100%;
+        font-size:1.2rem ;
+    }           
+    .main4,.main5{
         align-items: center;
     }
     .stream{
@@ -213,7 +253,7 @@ hr{
         width: 90%;
         text-align: center;
     }
-    .p5{
+    .p5,.p7{
         font-size: 2.5rem; 
     }
     .p6{
@@ -345,9 +385,17 @@ hr{
         text-align: center;
     }
 }
-
 @media screen and (max-width:510px) {
-    .p3,.p5{
+    .kids{
+        width: 300px;
+    }
+    .kids img{
+        width: 100%;
+    }
+    .p8{
+        font-size:1rem;
+    }           
+    .p3,.p5,.p7{
         font-size: 2rem;
     }
     .p4{
@@ -360,7 +408,7 @@ hr{
     .enimation{
         width: 300px;
         min-width: 300px;
-         height: 300px;
+        height: 300px;
         background-size: 300px;
     }
     .card{
@@ -368,8 +416,6 @@ hr{
         border-radius: 10px;
         margin-top: 10rem; 
         width: 250px;
-        
-        
     }
 }
 
