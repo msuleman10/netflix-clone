@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }   
+body{
+    background-color: black;
+}
 .main{
     height: 700px; 
     background-image: radial-gradient(gray 60%,black) ,url(data/back.jpg);
@@ -17,25 +20,25 @@ nav{
 .TVintro,.email{
     flex-wrap: nowrap;
 }
-.enjoy,.intro,.img,.cardintro,.main4,.kidintro{
+.enjoy,.intro,.img,.cardintro,.main4,.kidintro,.main6,.button{
     flex-direction: column;
 }
-nav,.main,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card img,.enimation,.stream,.kids,.kidintro{
+nav,.main,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card img,.enimation,.stream,.kids,.kidintro,.ask,.button,.main6 p,.question-heading{
     border: 0px solid green;
 }
 .tv,.enjoy,.cardintro,.img,.enimation,.main4,.main5,.kids,.kidintro{
     justify-content: center;
 }
-nav,.TVintro,.main3{
+nav,.TVintro,.main3,.button{
     justify-content: space-between;
 }
-nav,.tv,.intro,.enimation,.kids{
+nav,.tv,.intro,.enimation,.kids,.main6{
     align-items: center;
 }
-nav,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card,.enimation,.main3,.main4,.main5,.kids,.kidintro{
+nav,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card,.enimation,.main3,.main4,.main5,.kids,.kidintro,.main6,.button{
     display: flex;
 }
-button,.h1,.h3,h4,.enjoy h1,.enjoy h3,.p1,.p3,.p4,.p5,.p6,.p7,.p8{
+button,.h1,.h3,h4,.enjoy h1,.enjoy h3,.p1,.p3,.p4,.p5,.p6,.p7,.p8,.askintro,.main6 p,.question-heading{
     color: white;
 }
 .logo{
@@ -220,9 +223,66 @@ hr{
     font-size:1.5rem ;
     font-weight: normal;
 }
+/* Q. & .A */
+.main6{
+    width: 100%;
+}
+.askintro{
+    text-align: center;
+    font-size: 3.5rem;    
+}
+.first-button,.ask{
+    margin-top: 2rem;
+}
+.other-button{
+    margin-top: 1rem;
+}
+.button {
+    overflow: hidden;
+    height: 65px;
+    width: 70%;
+    background-color: rgb(56, 56, 56);
+    transition: height;
+    transition-duration: 1ms;
+    transition-delay: 0.1s;
+}
+.button:hover{
+    height:80%;
+}
+.main6 p , .question-heading{
+    padding: 15px;
+    font-size: 2rem;       
+}
+.p9,.p10{
+    font-size: 1.6rem;
+}
+.question-icon{ 
+    transform:  rotateZ(0deg);
+    margin-left: auto;
+}
+.question-icon:hover {
+    transform: rotateZ(45deg);
+}
+.question-header{
+    border-bottom: 2px solid black;
+    display: flex;   
+}
+.last-button{
+    margin-bottom: 3rem;
+}
+.line{
+    margin-top: 4rem;
+}
       /* use media qury */
           /* 1000PX */
 @media screen and (max-width:1000px) {
+    .main6 p , .question-heading{
+        /* padding: 15px; */
+        font-size: 1.8rem;       
+    }
+    .askintro{
+        font-size: 3rem;
+    }
     .main5{
         flex-direction: column-reverse;
         width: 100%;
@@ -294,6 +354,18 @@ hr{
 }
            /* 700PX */
 @media screen and (max-width:700px) {
+    .button{
+        height: 50px;
+        width: 90%;
+    }
+    .main6 p , .question-heading{
+        padding: 10px; 
+        font-size: 1.5rem;   
+        font-weight: normal;    
+    }
+    .askintro{
+        font-size: 2.5rem;
+    }
     .main{
         height: 600px;
     }
@@ -383,6 +455,19 @@ hr{
         margin-top: 5rem;
          width: 85%; 
         text-align: center;
+    }
+}
+@media screen and (max-width:520px){
+    .button{
+        height: 40px;
+    }
+    .main6 p , .question-heading{
+        padding: 10px; 
+        font-size: 1rem;   
+        font-weight: normal;    
+    }
+    .askintro{
+        font-size: 2rem;
     }
 }
 @media screen and (max-width:510px) {
