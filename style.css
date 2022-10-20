@@ -26,7 +26,7 @@ nav{
 nav,.main,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card img,.enimation,.stream,.kids,.kidintro,.ask,.button,.main6 p,.question-heading{
     border: 0px solid green;
 }
-.tv,.enjoy,.cardintro,.img,.enimation,.main4,.main5,.kids,.kidintro{
+.tv,.enjoy,.cardintro,.img,.enimation,.main4,.main5,.kids,.kidintro,.main2{
     justify-content: center;
 }
 nav,.TVintro,.main3,.button{
@@ -35,10 +35,10 @@ nav,.TVintro,.main3,.button{
 nav,.tv,.intro,.enimation,.kids,.main6{
     align-items: center;
 }
-nav,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card,.enimation,.main3,.main4,.main5,.kids,.kidintro,.main6,.button{
+nav,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card,.enimation,.main3,.main4,.main5,.kids,.kidintro,.main6,.button,.main2{
     display: flex;
 }
-button,.h1,.h3,h4,.enjoy h1,.enjoy h3,.p1,.p3,.p4,.p5,.p6,.p7,.p8,.askintro,.main6 p,.question-heading{
+button,.h1,.h3,h4,.enjoy h1,.enjoy h3,.p1,.p3,.p4,.p5,.p6,.p7,.p8,.askintro,.main6 p,.question-heading,.p11,.p12{
     color: white;
 }
 .logo{
@@ -89,38 +89,32 @@ hr{
 }
 /* TV */
 .main2{
-    height: 50%;
+    width: 100%;
+    height: 400px;
     background-color:black;
 }
-.TVintro{
-    height: 50vh;
+ .enjoy{
+    margin-left: 3rem;
+} 
+.p11{
+    line-height: 5rem;
+    font-size: 3rem;
+    font-weight: bold;
 }
-.enjoy{
-    margin-left: 6rem;
-}
-.enjoy h1{
-   line-height: 8rem;
-    font-size: 2.8rem;
-    text-align: left;
-}
-.enjoy h3{
-    font-size: 1.5rem;
-    text-align: left;
-    max-width: 33rem;
-    font-weight: normal;
+.p12{
+    max-width: 40rem; 
+    font-size: 1.9rem;
 }
 .tv{
-    width: 45%;
-    margin-right: 5rem;
-    position: relative;
+    width: 40rem;
+    position: relative; 
 }
-.tv img{
+ .tv img{
     position: absolute;
-    width: 95%;
-    top: 2rem;
-}
+    width: 30rem;
+} 
 .tv video{
-    width: 70%;
+    width: 22rem;
 }
 /* Enimation card */
 .main3{
@@ -276,6 +270,36 @@ hr{
       /* use media qury */
           /* 1000PX */
 @media screen and (max-width:1000px) {
+    .main2{
+        flex-direction: column;
+        justify-content: space-around; 
+        align-items: center;
+        height: 600px;    
+    }
+     .enjoy{
+        margin-left: 0rem;
+        width: 90%;
+    } 
+    .p11{
+        line-height: 5rem;
+        text-align: center;
+    }
+    .p12{
+        text-align: center;
+        max-width: 100%;  
+        font-size: 1.9rem;
+    }
+    .tv{
+        width:100%;
+        margin-bottom: 2rem;
+        position: relative; 
+    }
+     .tv img{
+        width: 20rem;
+    } 
+    .tv video{
+        width: 15rem;
+    }
     .main6 p , .question-heading{
         /* padding: 15px; */
         font-size: 1.8rem;       
@@ -421,18 +445,6 @@ hr{
         font-size: 2rem;
         max-width: 10em;
     }
-    .h3{
-        font-size: 1.2em;
-        font-weight: normal;
-    }
-    h4{
-        font-size: 1.1em;
-        line-height: 2em;
-        font-weight: normal;
-    }
-    .enjoy h1,.enjoy h3{
-         font-size: 1rem;
-     }
 }
       /* Only enimation card */
 @media screen and (max-width:900px) {
@@ -471,6 +483,14 @@ hr{
     }
 }
 @media screen and (max-width:510px) {
+    .p11{
+        line-height: 3rem;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .p12{
+        font-size: 1.5rem;
+    }
     .kids{
         width: 300px;
     }
