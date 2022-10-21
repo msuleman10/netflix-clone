@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }   
-body{
+body,.main2,.card,.main7,.main3,.main4,.main5{
     background-color: black;
 }
 .main{
@@ -20,10 +20,10 @@ nav{
 .TVintro,.email{
     flex-wrap: nowrap;
 }
-.enjoy,.intro,.img,.cardintro,.main4,.kidintro,.main6,.button{
+.enjoy,.intro,.img,.cardintro,.main4,.kidintro,.main6,.button,.main7,ul{
     flex-direction: column;
 }
-nav,.main,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card img,.enimation,.stream,.kids,.kidintro,.ask,.button,.main6 p,.question-heading{
+nav,.main,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card img,.enimation,.stream,.kids,.kidintro,.ask,.button,.main6 p,.question-heading,.main7,.contect,.end,ul{
     border: 0px solid green;
 }
 .tv,.enjoy,.cardintro,.img,.enimation,.main4,.main5,.kids,.kidintro,.main2{
@@ -32,14 +32,26 @@ nav,.main,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card img,.enimation
 nav,.TVintro,.main3,.button{
     justify-content: space-between;
 }
-nav,.tv,.intro,.enimation,.kids,.main6{
+nav,.tv,.intro,.enimation,.kids,.main6,.main7{
     align-items: center;
 }
-nav,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card,.enimation,.main3,.main4,.main5,.kids,.kidintro,.main6,.button,.main2{
+nav,.intro,.email,.TVintro,.enjoy,.tv,.cardintro,.img,.card,.enimation,.main3,.main4,.main5,.kids,.kidintro,.main6,.button,.main2,.main7,ul{
     display: flex;
 }
-button,.h1,.h3,h4,.enjoy h1,.enjoy h3,.p1,.p3,.p4,.p5,.p6,.p7,.p8,.askintro,.main6 p,.question-heading,.p11,.p12{
+button,.h1,.h3,h4,.enjoy h1,.enjoy h3,.p1,.p3,.p4,.p5,.p6,.p7,.p8,.askintro,.main6 p,.question-heading,.p11,.p12,.end{
     color: white;
+}
+.main2,.main3,.main4,.main5,.main6,.main7,ul{
+    width: 100%;
+}
+.main2,.enimation,.main5,.main7{
+    height: 400px;
+}
+.h1,.p11,.p3,.p5,.p7{
+    font-size: 3rem;
+}
+.h1,.p11,.p1,.p3,.p5{
+    font-weight: bold;
 }
 .logo{
     width: 150px;
@@ -51,9 +63,7 @@ button{
     font-size: 20px;
 }
 .h1{
-    font-size: 3rem;
-    max-width: 12em;
-    font-weight: bold;  
+    max-width: 12em;  
 }
 .h3{
     font-size: 1.6em;
@@ -63,7 +73,7 @@ h4{
     font-size: 1.3em;
     line-height: 4em;
 }
-.h1,.h3,h4{
+.h1,.h3,h4,.askintro{
     text-align: center;
 }
 .intro{
@@ -88,18 +98,11 @@ hr{
     border: none;
 }
 /* TV */
-.main2{
-    width: 100%;
-    height: 400px;
-    background-color:black;
-}
  .enjoy{
     margin-left: 3rem;
 } 
 .p11{
     line-height: 5rem;
-    font-size: 3rem;
-    font-weight: bold;
 }
 .p12{
     max-width: 40rem; 
@@ -118,14 +121,11 @@ hr{
 }
 /* Enimation card */
 .main3{
-    background-color: black;
-    width: 100%;
     height: 50%;
 }
 .enimation{
     width: 500px;
     min-width: 500px;
-    height: 400px;
     background-image: url(data/stranger.jpg);
     background-repeat: no-repeat;
     background-size: 500px;
@@ -140,7 +140,6 @@ hr{
     margin-top: 13rem;
     width: 300px;
     height: 75px;
-    background-color:black;
 }
 .card img{
     width: 3.4rem;
@@ -151,7 +150,6 @@ hr{
     margin-left: 1.1em;
 }
 .p1{
-    font-weight: bold;
     line-height: 25px;
 }
 .p2{
@@ -159,10 +157,6 @@ hr{
 }
 .cardintro{
     width: 50%;
-}
-.p3{
-    font-size: 3rem;
-    font-weight: bold;
 }
 .p3,.p4{
     max-width: 90%;
@@ -173,8 +167,6 @@ hr{
 }
 /* watch everywaer */
 .main4{
-    background-color: black;
-    width: 100%;
     height: 250px;
 }
 .stream{
@@ -182,9 +174,7 @@ hr{
     width: 45%;
 }
 .p5{
-    font-size: 3rem;
     margin-bottom: 20px;
-    font-weight: bold;
 }
 .p6{
     font-size:1.8rem ;
@@ -192,11 +182,6 @@ hr{
     line-height: 35px;
 }
 /* Kids Introduction */
-.main5{
-    background-color: black;
-    width: 100%;
-    height: 400px;
-}
 .kids{
     width: 50%;
 }
@@ -208,9 +193,7 @@ hr{
 }
 .p7{ 
     max-width: 90%;
-    font-size: 3rem;
     margin-bottom: 20px;
-    font-weight: bold;
 }
 .p8{
     max-width: 78%;
@@ -218,11 +201,7 @@ hr{
     font-weight: normal;
 }
 /* Q. & .A */
-.main6{
-    width: 100%;
-}
 .askintro{
-    text-align: center;
     font-size: 3.5rem;    
 }
 .first-button,.ask{
@@ -268,25 +247,13 @@ hr{
     margin-top: 4rem;
 }
       /* Contect us */
-.main7{
-    background-color:black;
-    width: 100%;
-    border: 0px solid red;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .contect{
-    border: 0px solid white;
     width: 80%;
     margin-top: 3rem;
     margin-bottom: 2rem;
 }
 .end{
     margin-top: 1.5rem;
-    color: white;
-    border: 0px solid yellowgreen;
     width: 80%;
 }
 ul li{
@@ -302,19 +269,11 @@ li a:hover,.contect a:hover{
 }
 .all-A ul{
     text-decoration: none;
-    border: 0px solid red;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     height: 150px;
 }
 .all-A{
-    border: 0px solid red;
     width: 80%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 }
       /* use media qury */
           /* 1000PX */
@@ -330,7 +289,6 @@ li a:hover,.contect a:hover{
         width: 90%;
     } 
     .p11{
-        line-height: 5rem;
         text-align: center;
     }
     .p12{
@@ -391,7 +349,7 @@ li a:hover,.contect a:hover{
     }
     .p6{
         font-size:1.5rem ;
-        font-weight: normal;
+        font-weight: normal; 
         line-height: 35px;
     }   
     .email{
@@ -473,7 +431,6 @@ li a:hover,.contect a:hover{
     }
     h4{
         font-size: 1.2em;
-        line-height: 3em;
     }
 }
             /* 440PX */
@@ -586,13 +543,7 @@ li a:hover,.contect a:hover{
     }
 }
 @media screen and (max-width:450px) {
-    .all-A {
-        width: 100%;
-    }
-    .contect{
-        width: 100%;
-    }
-    .end{
+    .all-A,.contect,.end {
         width: 100%;
     }
 }
